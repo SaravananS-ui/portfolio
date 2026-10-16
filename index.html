@@ -3,32 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Saravanan S. - ECE Graduate from SRM TRP Engineering College (2022–2026) and Aspiring Software Developer. Practical projects in assistive technology, IoT embedded systems, and frontend web development." />
-  <meta name="keywords" content="Saravanan S, ECE Graduate, Aspiring Software Developer, Frontend Developer, Junior Developer, Java, JavaScript, React, SRM TRP Engineering College, Portfolio" />
+  <meta name="description" content="Portfolio of Saravanan S. - ECE Graduate and Aspiring Software Developer." />
+  <meta name="keywords" content="Saravanan S, ECE Graduate, Aspiring Software Developer, Frontend Developer, Java, JavaScript, React" />
   <meta name="author" content="Saravanan S." />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph / LinkedIn -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Saravanan S. | ECE Graduate | Aspiring Software Developer" />
-  <meta property="og:description" content="Portfolio of Saravanan S. - ECE Graduate and Aspiring Software Developer with practical project experience in assistive systems, IoT, and modern web development." />
+  <meta property="og:title" content="Saravanan S. | Aspiring Software Developer" />
+  <meta property="og:description" content="Portfolio of Saravanan S., ECE Graduate and Aspiring Software Developer." />
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Saravanan S. | ECE Graduate | Aspiring Software Developer" />
-  <meta name="twitter:description" content="ECE Graduate and Aspiring Software Developer with practical engineering project experience." />
+  <meta name="twitter:title" content="Saravanan S. | Aspiring Software Developer" />
+  <meta name="twitter:description" content="ECE Graduate and Aspiring Software Developer." />
 
   <title>Saravanan S. | ECE Graduate | Aspiring Software Developer</title>
 
-  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- FIXED: style.css is in the repository root -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
   <!-- Header / Navigation -->
   <header class="site-header" role="banner">
     <nav class="nav-container" aria-label="Main navigation">
@@ -44,12 +43,9 @@
         <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#achievements" class="nav-link">Achievements</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
-        <!-- Wallix Website External Link -->
-        <!-- CONFIG: Replace the href value below with your actual deployed Wallix Vercel URL -->
         <li>
-          <a href="https://wallix-demo.vercel.app" target="_blank" rel="noopener noreferrer" class="nav-link nav-external-link" title="Visit Wallix Website (Opens in new tab)">
-            <span>Wallix</span>
-            <svg class="external-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          <a href="https://wallixwebsite.vercel.app" target="_blank" rel="noopener noreferrer" class="nav-link nav-external-link">
+            Wallix ↗
           </a>
         </li>
       </ul>
@@ -61,7 +57,7 @@
       </button>
     </nav>
 
-    <!-- Mobile Navigation Drawer -->
+    <!-- Mobile Navigation -->
     <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile Navigation" hidden>
       <button class="mobile-nav-close" aria-label="Close navigation">&times;</button>
       <ul class="mobile-nav-links" role="list">
@@ -72,11 +68,9 @@
         <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
         <li><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
         <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
-        <!-- Wallix Mobile Link -->
         <li>
-          <!-- CONFIG: Replace with your actual deployed Wallix Vercel URL -->
           <a href="https://wallixwebsite.vercel.app" target="_blank" rel="noopener noreferrer" class="mobile-nav-link mobile-nav-external">
-            Wallix <span class="external-arrow" aria-hidden="true">↗</span>
+            Wallix ↗
           </a>
         </li>
       </ul>
@@ -91,9 +85,12 @@
         <div class="hero-content">
           <p class="hero-greeting reveal">Hello, my name is</p>
           <h1 class="hero-name reveal">Saravanan S.</h1>
+
           <h2 class="hero-title reveal">
-            <span id="typed-text">ECE Graduate | Aspiring Software Developer</span><span class="typed-cursor" aria-hidden="true">|</span>
+            <span id="typed-text">ECE Graduate | Aspiring Software Developer</span>
+            <span class="typed-cursor" aria-hidden="true">|</span>
           </h2>
+
           <p class="hero-description reveal">
             An Electronics and Communication Engineering graduate from SRM TRP Engineering College (2022–2026) with a passion for software engineering, frontend development, and building dependable, practical solutions through clean code and problem solving.
           </p>
@@ -101,31 +98,33 @@
           <div class="hero-cta reveal">
             <a href="#projects" class="btn btn-primary">
               View Projects
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
             </a>
-            <!-- Expected resume filename: Saravanan_S_Resume.pdf -->
-            <a href="Saravanan_S_Resume.pdf" class="btn btn-outline" download="Saravanan_S_Resume.pdf" aria-label="Download Saravanan's Resume in PDF format">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+
+            <a href="Saravanan_S_Resume.pdf" class="btn btn-outline" download="Saravanan_S_Resume.pdf">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
               Download Resume
             </a>
           </div>
 
           <div class="hero-socials reveal">
-            <!-- Verified LinkedIn Profile -->
-            <a href="https://linkedin.com/in/saravanansvs" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Saravanan's LinkedIn Profile">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
-              <span>LinkedIn</span>
+            <a href="https://linkedin.com/in/saravanansvs" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+              <span>LinkedIn ↗</span>
             </a>
 
-            <!-- GitHub Profile: Replace YOUR_GITHUB_USERNAME with your actual GitHub username -->
-            <a href="https://github.com/SaravananS-ui" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Saravanan's GitHub Profile">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-              <span>GitHub</span>
+            <a href="https://github.com/SaravananS-ui" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+              <span>GitHub ↗</span>
             </a>
           </div>
         </div>
 
-        <!-- Hero Visual Code Card (Fresher Stack) -->
+        <!-- Developer Code Card -->
         <div class="hero-visual reveal" aria-hidden="true">
           <div class="hero-card">
             <div class="hero-card-header">
@@ -134,20 +133,31 @@
               <span class="dot dot-green"></span>
               <span class="card-filename">CandidateProfile.java</span>
             </div>
+
             <pre class="hero-card-code"><code><span class="code-keyword">public class</span> <span class="code-class">SaravananDev</span> {
 
-  <span class="code-keyword">String</span> headline <span class="code-op">=</span> <span class="code-string">"ECE Graduate | Aspiring Developer"</span>;
-  <span class="code-keyword">String</span> college <span class="code-op">=</span> <span class="code-string">"SRM TRP Engineering College"</span>;
-  <span class="code-keyword">String</span> period <span class="code-op">=</span> <span class="code-string">"2022 - 2026"</span>;
-  <span class="code-keyword">boolean</span> openForRoles <span class="code-op">=</span> <span class="code-bool">true</span>;
+  <span class="code-keyword">String</span> headline =
+      <span class="code-string">"ECE Graduate | Aspiring Developer"</span>;
 
-  <span class="code-keyword">String[]</span> primarySkills <span class="code-op">=</span> {
-    <span class="code-string">"Java"</span>, <span class="code-string">"JavaScript"</span>,
-    <span class="code-string">"HTML5/CSS3"</span>, <span class="code-string">"React"</span>, <span class="code-string">"Git"</span>
+  <span class="code-keyword">String</span> college =
+      <span class="code-string">"SRM TRP Engineering College"</span>;
+
+  <span class="code-keyword">String</span> period =
+      <span class="code-string">"2022 - 2026"</span>;
+
+  <span class="code-keyword">boolean</span> openForRoles =
+      <span class="code-bool">true</span>;
+
+  <span class="code-keyword">String[]</span> primarySkills = {
+    <span class="code-string">"Java"</span>,
+    <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"HTML5/CSS3"</span>,
+    <span class="code-string">"React"</span>,
+    <span class="code-string">"Git"</span>
   };
 
   <span class="code-keyword">void</span> <span class="code-fn">focus</span>() {
-    <span class="code-comment">// Building practical projects &amp; clean code</span>
+    <span class="code-comment">// Building practical projects</span>
   }
 }</code></pre>
           </div>
@@ -164,14 +174,14 @@
         </div>
 
         <div class="about-layout">
-          <!-- Profile Photo Card -->
           <div class="about-photo-card reveal">
             <div class="about-photo-wrapper">
-              <img src="profile.jpg" alt="Saravanan S. - ECE Graduate &amp; Aspiring Software Developer" class="about-photo" />
+              <img src="profile.jpg" alt="Saravanan S. - ECE Graduate and Aspiring Software Developer" class="about-photo" />
               <div class="photo-badge">
                 <span class="pulse-dot"></span> Open to Opportunities
               </div>
             </div>
+
             <div class="about-photo-caption">
               <h3 class="caption-name">Saravanan S.</h3>
               <p class="caption-title">ECE Graduate | Aspiring Developer</p>
@@ -179,20 +189,22 @@
             </div>
           </div>
 
-          <!-- Bio Details -->
           <div class="about-details">
             <div class="about-text reveal">
               <p class="about-lead">
-                I am a <strong>B.E. Electronics and Communication Engineering</strong> graduate from <strong>SRM TRP Engineering College</strong> (2022–2026) seeking entry-level software developer, frontend developer, and junior web development roles.
+                I am a <strong>B.E. Electronics and Communication Engineering</strong> graduate from <strong>SRM TRP Engineering College</strong> (2022–2026), seeking entry-level software developer, frontend developer, and junior web development roles.
               </p>
+
               <p>
-                My engineering education has provided a solid foundation in analytical problem-solving, digital systems, and hardware-software integration. Through hands-on project work, I discovered a strong enthusiasm for software development, modern web interfaces, and building dependable technology solutions.
+                My engineering education has provided a foundation in analytical problem-solving, digital systems, and hardware-software integration. Through hands-on projects, I discovered a strong interest in software development, modern web interfaces, and practical technology solutions.
               </p>
+
               <p>
-                I have gained practical project experience working with <strong>Java</strong>, <strong>JavaScript</strong>, <strong>HTML/CSS</strong>, <strong>React fundamentals</strong>, <strong>embedded microcontrollers (Arduino &amp; ESP32)</strong>, and <strong>computer vision basics</strong>. I enjoy taking an idea from concept to a working prototype, writing organized code, and continuously learning better development practices.
+                I have project experience with <strong>Java</strong>, <strong>JavaScript</strong>, <strong>HTML/CSS</strong>, <strong>React fundamentals</strong>, <strong>Arduino and ESP32</strong>, and <strong>computer vision basics</strong>.
               </p>
+
               <p>
-                I am eager to join a collaborative engineering team where I can contribute actively, receive mentorship from experienced developers, and grow into a versatile software engineer.
+                I am eager to join a collaborative engineering team where I can contribute, learn from experienced developers, and grow as a software developer.
               </p>
 
               <div class="about-info-grid">
@@ -200,27 +212,29 @@
                   <span class="about-info-label">Degree</span>
                   <span class="about-info-value">B.E. Electronics &amp; Communication</span>
                 </div>
+
                 <div class="about-info-item">
                   <span class="about-info-label">Institution</span>
                   <span class="about-info-value">SRM TRP Engineering College</span>
                 </div>
+
                 <div class="about-info-item">
                   <span class="about-info-label">Academic Duration</span>
                   <span class="about-info-value">2022 – 2026</span>
                 </div>
+
                 <div class="about-info-item">
                   <span class="about-info-label">Target Roles</span>
                   <span class="about-info-value status-badge">Frontend / Junior Software Developer</span>
                 </div>
               </div>
 
-              <!-- Professional Growth Focus Note -->
               <div class="about-focus-card">
                 <div class="focus-card-icon" aria-hidden="true">🎯</div>
                 <div>
                   <h4 class="focus-card-title">Current Development Focus</h4>
                   <p class="focus-card-text">
-                    Strengthening frontend development fundamentals (modern JavaScript ES6+, responsive CSS layout architectures, React component design), core Java object-oriented principles, and version control workflows.
+                    Strengthening JavaScript, responsive CSS, React fundamentals, core Java, and version control workflows.
                   </p>
                 </div>
               </div>
@@ -230,26 +244,24 @@
       </div>
     </section>
 
-    <!-- 3. TECHNICAL SKILLS SECTION -->
+    <!-- 3. TECHNICAL SKILLS -->
     <section id="skills" class="section" aria-labelledby="skills-heading">
       <div class="container">
         <div class="section-header">
           <p class="section-label">Technical Background</p>
           <h2 class="section-title" id="skills-heading">Technical Skills</h2>
           <p class="section-subtitle">
-            Technologies, programming languages, and developer tools applied across academic coursework and practical project implementations.
+            Programming languages, technologies, and tools applied in coursework and practical projects.
           </p>
         </div>
 
         <div class="skills-grid">
-          <!-- Programming -->
           <article class="skill-category reveal">
             <div class="skill-category-header">
-              <span class="skill-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </span>
+              <span class="skill-icon" aria-hidden="true">⌨</span>
               <h3 class="skill-category-title">Programming</h3>
             </div>
+
             <ul class="skill-list" role="list">
               <li class="skill-item">
                 <span class="skill-name">Java</span>
@@ -266,18 +278,16 @@
             </ul>
           </article>
 
-          <!-- Frontend Development -->
           <article class="skill-category reveal">
             <div class="skill-category-header">
-              <span class="skill-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-              </span>
+              <span class="skill-icon" aria-hidden="true">▤</span>
               <h3 class="skill-category-title">Frontend Development</h3>
             </div>
+
             <ul class="skill-list" role="list">
               <li class="skill-item">
                 <span class="skill-name">HTML5</span>
-                <span class="skill-desc">Semantic, accessible markup</span>
+                <span class="skill-desc">Semantic markup</span>
               </li>
               <li class="skill-item">
                 <span class="skill-name">CSS3</span>
@@ -285,27 +295,25 @@
               </li>
               <li class="skill-item">
                 <span class="skill-name">JavaScript</span>
-                <span class="skill-desc">Interactive UI logic</span>
+                <span class="skill-desc">Interactive interfaces</span>
               </li>
               <li class="skill-item">
                 <span class="skill-name">React</span>
-                <span class="skill-level-tag">Foundations / Components</span>
+                <span class="skill-level-tag">Fundamentals</span>
               </li>
             </ul>
           </article>
 
-          <!-- Tools & Platforms -->
           <article class="skill-category reveal">
             <div class="skill-category-header">
-              <span class="skill-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-              </span>
+              <span class="skill-icon" aria-hidden="true">⚙</span>
               <h3 class="skill-category-title">Tools &amp; Platforms</h3>
             </div>
+
             <ul class="skill-list" role="list">
               <li class="skill-item">
                 <span class="skill-name">Git</span>
-                <span class="skill-desc">Version control, branching</span>
+                <span class="skill-desc">Version control</span>
               </li>
               <li class="skill-item">
                 <span class="skill-name">GitHub</span>
@@ -313,31 +321,29 @@
               </li>
               <li class="skill-item">
                 <span class="skill-name">VS Code</span>
-                <span class="skill-desc">Primary code editor</span>
+                <span class="skill-desc">Code editor</span>
               </li>
             </ul>
           </article>
 
-          <!-- Technical Fundamentals -->
           <article class="skill-category reveal">
             <div class="skill-category-header">
-              <span class="skill-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </span>
+              <span class="skill-icon" aria-hidden="true">⬡</span>
               <h3 class="skill-category-title">Technical Fundamentals</h3>
             </div>
+
             <ul class="skill-list" role="list">
               <li class="skill-item">
-                <span class="skill-name">Networking Fundamentals</span>
-                <span class="skill-desc">OSI layers, TCP/IP, protocols</span>
+                <span class="skill-name">Networking</span>
+                <span class="skill-desc">OSI layers, TCP/IP</span>
               </li>
               <li class="skill-item">
                 <span class="skill-name">Object-Oriented Programming</span>
-                <span class="skill-desc">Encapsulation, inheritance, polymorphism</span>
+                <span class="skill-desc">OOP fundamentals</span>
               </li>
               <li class="skill-item">
-                <span class="skill-name">Web &amp; REST Fundamentals</span>
-                <span class="skill-desc">HTTP methods, client-server flow</span>
+                <span class="skill-name">Web Fundamentals</span>
+                <span class="skill-desc">HTTP and client-server flow</span>
               </li>
             </ul>
           </article>
@@ -345,19 +351,18 @@
       </div>
     </section>
 
-    <!-- 4. PROJECTS SECTION -->
+    <!-- 4. PROJECTS -->
     <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
       <div class="container">
         <div class="section-header">
           <p class="section-label">Engineering Work</p>
           <h2 class="section-title" id="projects-heading">Projects</h2>
           <p class="section-subtitle">
-            Practical hardware-software and assistive engineering projects developed and tested during academic studies.
+            Practical hardware-software and assistive engineering projects developed during academic studies.
           </p>
         </div>
 
         <div class="projects-grid">
-          <!-- Project 1: Vision & Voice System -->
           <article class="project-card reveal">
             <div class="project-card-inner">
               <div class="project-meta-row">
@@ -371,21 +376,21 @@
                 <div class="project-desc-group">
                   <h4 class="project-subhead">Problem:</h4>
                   <p class="project-text">
-                    Visually impaired individuals face daily navigation obstacles and safety hazards without real-time, non-visual awareness of dynamic objects and obstacles in their surroundings.
+                    Visually impaired individuals face navigation obstacles and safety hazards without real-time awareness of their surroundings.
                   </p>
                 </div>
 
                 <div class="project-desc-group">
                   <h4 class="project-subhead">Solution &amp; Contribution:</h4>
                   <p class="project-text">
-                    Designed an assistive technology system that combines computer vision for object detection with synthesized voice alerts. Utilizes camera feed processing to recognize obstacles and transmit timely spoken guidance to the user via audio output. Integrated ESP32 microcontroller communication and sensor modules to enable responsive environmental feedback.
+                    Designed an assistive system combining computer vision for object detection with synthesized voice alerts. Camera processing recognizes obstacles and transmits spoken guidance through audio output. ESP32 communication and sensor modules support environmental feedback.
                   </p>
                 </div>
 
                 <div class="project-desc-group">
                   <h4 class="project-subhead">Implementation Status:</h4>
                   <p class="project-text">
-                    Completed and tested the computer vision detection logic and voice synthesis pipeline. Prototype evaluated with obstacle scenarios; wireless telemetry and audio latency optimizations are planned for future iterations.
+                    Tested the computer vision detection logic and voice synthesis pipeline. Further wireless telemetry and audio latency improvements are planned.
                   </p>
                 </div>
               </div>
@@ -402,12 +407,11 @@
             </div>
           </article>
 
-          <!-- Project 2: Vehicle Accident Detection -->
           <article class="project-card reveal">
             <div class="project-card-inner">
               <div class="project-meta-row">
                 <span class="project-category-badge">Embedded Systems &amp; Telematics</span>
-                <span class="project-status-badge status-tested">Hardware Prototype Validated</span>
+                <span class="project-status-badge status-tested">Prototype Validated</span>
               </div>
 
               <h3 class="project-title">Vehicle Accident Detection and Alert System</h3>
@@ -416,28 +420,28 @@
                 <div class="project-desc-group">
                   <h4 class="project-subhead">Problem:</h4>
                   <p class="project-text">
-                    Delayed emergency notifications following road accidents significantly decrease emergency response efficiency and increase fatality risks, particularly in remote areas.
+                    Delayed emergency notifications following road accidents can reduce emergency response efficiency, particularly in remote areas.
                   </p>
                 </div>
 
                 <div class="project-desc-group">
                   <h4 class="project-subhead">Solution &amp; Contribution:</h4>
                   <p class="project-text">
-                    Constructed an automated embedded detection system that detects sudden deceleration and vehicle tilt thresholds indicative of collisions. Upon trigger, the system queries the GPS module for exact coordinates and immediately sends an automated emergency SMS containing the live location link to designated contacts via GSM.
+                    Developed an embedded detection system that identifies sudden deceleration and vehicle tilt. When triggered, it obtains GPS coordinates and sends an emergency SMS containing the location to designated contacts through GSM.
                   </p>
                 </div>
 
                 <div class="project-desc-group">
                   <h4 class="project-subhead">Implementation Status:</h4>
                   <p class="project-text">
-                    Circuit assembled and firmware logic validated on breadboard prototype. Collision threshold sensing and SMS alert dispatch with live latitude and longitude successfully tested.
+                    Assembled the circuit and tested collision threshold sensing and SMS alerts containing latitude and longitude.
                   </p>
                 </div>
               </div>
 
               <div class="project-tags" aria-label="Technologies used">
                 <span class="project-tag">Arduino Uno</span>
-                <span class="project-tag">ADXL335 Accelerometer</span>
+                <span class="project-tag">ADXL335</span>
                 <span class="project-tag">NEO-6M GPS</span>
                 <span class="project-tag">SIM800L GSM</span>
                 <span class="project-tag">Embedded C</span>
@@ -445,12 +449,11 @@
             </div>
           </article>
 
-          <!-- Project 3: Smart Blind Stick -->
           <article class="project-card reveal">
             <div class="project-card-inner">
               <div class="project-meta-row">
                 <span class="project-category-badge">Assistive Hardware</span>
-                <span class="project-status-badge status-tested">Physical Prototype Built</span>
+                <span class="project-status-badge status-tested">Prototype Built</span>
               </div>
 
               <h3 class="project-title">Smart Blind Stick</h3>
@@ -459,29 +462,29 @@
                 <div class="project-desc-group">
                   <h4 class="project-subhead">Problem:</h4>
                   <p class="project-text">
-                    Traditional mobility canes rely exclusively on physical surface contact and cannot detect obstacles at knee-level or head-height before impact occurs.
+                    Traditional mobility canes may not detect obstacles before the user makes contact with them.
                   </p>
                 </div>
 
                 <div class="project-desc-group">
                   <h4 class="project-subhead">Solution &amp; Contribution:</h4>
                   <p class="project-text">
-                    Engineered an ultrasonic distance-ranging walking stick that proactively scans the path ahead for obstacles. Configured calibrated multi-zone alert thresholds: as an obstacle nears the user, the system triggers progressive acoustic buzzer tones and tactile haptic vibration feedback.
+                    Built an ultrasonic distance-ranging stick that detects obstacles and provides acoustic buzzer alerts and vibration feedback as objects approach.
                   </p>
                 </div>
 
                 <div class="project-desc-group">
                   <h4 class="project-subhead">Implementation Status:</h4>
                   <p class="project-text">
-                    Built a fully functioning physical prototype cane. Calibrated sensor detection range for reliable indoor and outdoor obstacle distance warnings.
+                    Built a physical prototype and calibrated sensor detection for obstacle distance warnings.
                   </p>
                 </div>
               </div>
 
               <div class="project-tags" aria-label="Technologies used">
                 <span class="project-tag">Arduino Nano</span>
-                <span class="project-tag">HC-SR04 Ultrasonic</span>
-                <span class="project-tag">Buzzer Alert</span>
+                <span class="project-tag">HC-SR04</span>
+                <span class="project-tag">Buzzer</span>
                 <span class="project-tag">Vibration Motor</span>
                 <span class="project-tag">Embedded C</span>
               </div>
@@ -491,19 +494,18 @@
       </div>
     </section>
 
-    <!-- 5. EXPERIENCE SECTION -->
+    <!-- 5. EXPERIENCE -->
     <section id="experience" class="section" aria-labelledby="experience-heading">
       <div class="container">
         <div class="section-header">
           <p class="section-label">Practical Background</p>
           <h2 class="section-title" id="experience-heading">Internship Experience</h2>
           <p class="section-subtitle">
-            Hands-on internship exposure in software research &amp; development and broadcast engineering infrastructure.
+            Internship exposure in software research and development and broadcast engineering.
           </p>
         </div>
 
         <div class="timeline" role="list">
-          <!-- Experience 1: Cobra Softwares -->
           <article class="timeline-item reveal" role="listitem">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
@@ -515,12 +517,11 @@
                 <span class="timeline-type">Internship</span>
               </div>
               <p class="timeline-description">
-                Gained practical exposure in a software research and development setting, working on technical assignments, understanding developer workflows, and collaborating on technology exploration tasks.
+                Gained exposure to software research and development, technical assignments, developer workflows, and technology exploration.
               </p>
             </div>
           </article>
 
-          <!-- Experience 2: All India Radio -->
           <article class="timeline-item reveal" role="listitem">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-content">
@@ -533,7 +534,7 @@
                 <span class="timeline-type">Internship</span>
               </div>
               <p class="timeline-description">
-                Completed an internship at All India Radio in 2024, acquiring firsthand exposure to broadcast engineering, transmission systems, signal routing, and communication network technologies.
+                Gained exposure to broadcast engineering, transmission systems, signal routing, and communication network technologies.
               </p>
             </div>
           </article>
@@ -541,7 +542,7 @@
       </div>
     </section>
 
-    <!-- 6. ACHIEVEMENTS SECTION -->
+    <!-- 6. ACHIEVEMENTS -->
     <section id="achievements" class="section section-alt" aria-labelledby="achievements-heading">
       <div class="container">
         <div class="section-header">
@@ -557,7 +558,7 @@
               <h3 class="achievement-title">National Hackathon 2024</h3>
               <p class="achievement-org">Naan Mudhalvan / TANSAM Initiative</p>
               <p class="achievement-desc">
-                Secured First Place at the National Hackathon 2024 conducted under the prestigious Naan Mudhalvan / TANSAM initiative, recognized for practical problem solving, innovative technical implementation, and effective teamwork.
+                Secured first place at the National Hackathon 2024 under the Naan Mudhalvan / TANSAM initiative, demonstrating practical problem-solving, technical implementation, and teamwork.
               </p>
             </div>
           </article>
@@ -565,25 +566,22 @@
       </div>
     </section>
 
-    <!-- 7. CONTACT SECTION -->
+    <!-- 7. CONTACT -->
     <section id="contact" class="section" aria-labelledby="contact-heading">
       <div class="container">
         <div class="section-header">
           <p class="section-label">Get in Touch</p>
           <h2 class="section-title" id="contact-heading">Contact</h2>
           <p class="section-subtitle">
-            I am actively seeking entry-level software developer, frontend developer, and junior software engineer opportunities. Let's connect!
+            I am actively seeking entry-level software developer and frontend developer opportunities. Let's connect!
           </p>
         </div>
 
         <div class="contact-card-container reveal">
           <div class="contact-box">
             <div class="contact-methods-grid">
-              <!-- LinkedIn Card -->
-              <a href="https://linkedin.com/in/saravanansvs" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Connect with Saravanan on LinkedIn">
-                <div class="contact-card-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
-                </div>
+              <a href="https://linkedin.com/in/saravanansvs" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Connect on LinkedIn">
+                <div class="contact-card-icon" aria-hidden="true">in</div>
                 <div class="contact-card-content">
                   <span class="contact-card-label">LinkedIn Profile</span>
                   <span class="contact-card-val">linkedin.com/in/saravanansvs</span>
@@ -591,12 +589,8 @@
                 </div>
               </a>
 
-              <!-- Email Card -->
-              <!-- CONFIG: Replace your.email@example.com with your actual email address -->
-              <a href="mailto:emailsaravanan30@gmail.com?subject=Job%20Opportunity%20Discussion%20-%20Saravanan%20S." class="contact-card" aria-label="Send Email to Saravanan">
-                <div class="contact-card-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                </div>
+              <a href="mailto:emailsaravanan30@gmail.com?subject=Job%20Opportunity%20Discussion%20-%20Saravanan%20S." class="contact-card" aria-label="Send Email">
+                <div class="contact-card-icon" aria-hidden="true">✉</div>
                 <div class="contact-card-content">
                   <span class="contact-card-label">Direct Email</span>
                   <span class="contact-card-val">emailsaravanan30@gmail.com</span>
@@ -604,12 +598,8 @@
                 </div>
               </a>
 
-              <!-- GitHub Card -->
-              <!-- CONFIG: Replace YOUR_GITHUB_USERNAME with your actual GitHub username -->
-              <a href="https://github.com/SaravananS-ui" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Visit Saravanan's GitHub">
-                <div class="contact-card-icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                </div>
+              <a href="https://github.com/SaravananS-ui" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Visit GitHub">
+                <div class="contact-card-icon" aria-hidden="true">⌘</div>
                 <div class="contact-card-content">
                   <span class="contact-card-label">GitHub</span>
                   <span class="contact-card-val">github.com/SaravananS-ui</span>
@@ -621,11 +611,10 @@
             <div class="contact-prompt-banner">
               <div class="prompt-text">
                 <strong>Interested in discussing an opportunity?</strong>
-                <p>Feel free to reach out directly via email or connect with me on LinkedIn.</p>
+                <p>Feel free to reach out via email or connect with me on LinkedIn.</p>
               </div>
               <a href="mailto:emailsaravanan30@gmail.com?subject=Opportunity%20Inquiry%20for%20Saravanan%20S." class="btn btn-primary">
                 Compose Email
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
               </a>
             </div>
           </div>
@@ -639,8 +628,12 @@
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-container">
       <div class="footer-left">
-        <a href="#home" class="footer-logo"><span class="brand-accent"></span></a>
-        <p class="footer-copy">&copy; 2026 Saravanan S. ECE Graduate &amp; Aspiring Software Developer.</p>
+        <a href="#home" class="footer-logo">
+          <span class="brand-accent"></span>
+        </a>
+        <p class="footer-copy">
+          &copy; 2026 Saravanan S. ECE Graduate &amp; Aspiring Software Developer.
+        </p>
       </div>
 
       <div class="footer-nav">
@@ -651,25 +644,23 @@
         <a href="#experience" class="footer-nav-link">Experience</a>
         <a href="#achievements" class="footer-nav-link">Achievements</a>
         <a href="#contact" class="footer-nav-link">Contact</a>
-        <!-- Wallix Footer Link -->
-        <!-- CONFIG: Replace with your actual deployed Wallix Vercel URL -->
-        <a href="https://wallixwebsite.vercel.app" target="_blank" rel="noopener noreferrer" class="footer-nav-link footer-external-link" title="Visit Wallix Website (Opens in new tab)">
+        <a href="https://wallixwebsite.vercel.app" target="_blank" rel="noopener noreferrer" class="footer-nav-link footer-external-link">
           Wallix ↗
         </a>
       </div>
 
       <div class="footer-socials">
-        <a href="https://linkedin.com/in/saravanansvs" target="_blank" rel="noopener noreferrer" aria-label="Saravanan's LinkedIn Profile">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <a href="https://linkedin.com/in/saravanansvs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          LinkedIn
         </a>
-        <!-- CONFIG: Replace YOUR_GITHUB_USERNAME with your GitHub username -->
-        <a href="https://github.com/SaravananS-ui" target="_blank" rel="noopener noreferrer" aria-label="Saravanan's GitHub Profile">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        <a href="https://github.com/SaravananS-ui" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          GitHub
         </a>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <!-- FIXED: main.js is in the repository root -->
+  <script src="main.js"></script>
 </body>
 </html>
